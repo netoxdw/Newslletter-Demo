@@ -44,16 +44,17 @@
         <p>Recibe contenido exclusivo y mantente informado con las últimas novedades</p>
     </section>
 
-    <!-- Formulario de Captura de Datos -->
+    <!-- Formulario de Captura de Datos para Netlify -->
     <section class="container form-container">
         <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo electrónico">
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
             </div>
             <button type="submit" class="btn btn-primary">Suscribirse</button>
         </form>
